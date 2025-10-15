@@ -1,0 +1,331 @@
+# ============================================================================
+# MoneyMitra - Agentic AI Financial Coaching System
+# Comprehensive .gitignore for Django + React + AI/ML Project
+# ============================================================================
+
+# ============================
+# SECURITY - CRITICAL SECTION
+# ============================
+# Never commit these files - they contain secrets!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+.env.*
+
+# API Keys and Secrets
+api_keys.txt
+secrets.json
+config/secrets.py
+cerebras_key.txt
+
+# ========================
+# PYTHON / DJANGO SECTION
+# ========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+ml_env/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+backend/django_services/ml_env/
+backend/django_services/env/
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+/static/
+/media/
+
+# Django migrations (optional - uncomment if you want to ignore)
+# */migrations/*.py
+# */migrations/*.pyc
+# !*/migrations/__init__.py
+
+# ========================
+# NODE.JS / REACT SECTION
+# ========================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/out/
+
+# Cache directories
+.npm
+.eslintcache
+frontend/.eslintcache
+
+# ============================
+# AI/ML & DATA SCIENCE SECTION
+# ============================
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+
+# TensorFlow
+*.pb
+*.tflite
+
+# Model files
+models/
+*.model
+*.pkl
+*.joblib
+*.h5
+
+# Data files
+data/
+datasets/
+*.csv
+*.json
+*.parquet
+test_data/
+training_data/
+financial_data/
+
+# ========================
+# DEVELOPMENT TOOLS
+# ========================
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ========================
+# DEPLOYMENT & INFRASTRUCTURE
+# ========================
+
+# Docker
+.dockerignore
+Dockerfile.prod
+docker-compose.override.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Cloud deployment
+.vercel
+.netlify
+
+# ========================
+# LOGS & MONITORING
+# ========================
+
+# Log files
+*.log
+logs/
+backend/logs/
+frontend/logs/
+
+# Error logs
+error.log
+debug.log
+access.log
+
+# PM2 logs
+.pm2/
+
+# ========================
+# BACKUP & TEMPORARY FILES
+# ========================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ========================
+# TESTING & DOCUMENTATION
+# ========================
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Documentation builds
+docs/_build/
+site/
+
+# ========================
+# PACKAGE MANAGERS
+# ========================
+
+# Yarn
+yarn.lock
+.yarnrc
+
+# NPM
+package-lock.json
+.npmrc
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ========================
+# CERTIFICATES & KEYS
+# ========================
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.ssh
+
+# ========================
+# PROJECT SPECIFIC
+# ========================
+
+# Demo files (uncomment if you don't want to commit demo data)
+# demo_data/
+# sample_transactions.json
+# test_users.json
+
+# Screenshots and recordings (uncomment if you don't want to commit these)
+# screenshots/
+# demo_videos/
+# *.mp4
+# *.mov
+
+# Development database backups
+backup_*.sql
+dump_*.json
+
+# Local configuration overrides
+local_config.py
+dev_settings.py
+
+# ========================
+# HACKATHON SPECIFIC
+# ========================
+
+# Submission files (keep these commented until final submission)
+# presentation.pptx
+# demo_video.mp4
+# team_photo.jpg
+
+# Competition sensitive files
+# strategy_notes.md
+# competitor_analysis.md
+
+# ========================
+# FUTURE EXTENSIONS
+# ========================
+
+# Machine Learning Pipelines
+mlruns/
+.mlflow/
+wandb/
+
+# Kubernetes
+*.yaml.local
+*-secret.yaml
+
+# GraphQL
+schema.json
+schema.graphql
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
