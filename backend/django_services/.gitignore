@@ -1,0 +1,21 @@
+# Django local settings
+local_settings.py
+settings_local.py
+
+# SQLite database
+*.sqlite3
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+static/
+
+# Log files
+*.log
+debug.log
+
+# Virtual environment
+ml_env/
+env/
