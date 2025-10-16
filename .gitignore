@@ -249,7 +249,7 @@ yarn.lock
 .yarnrc
 
 # NPM
-package-lock.json
+#package-lock.json
 .npmrc
 
 # Pip
