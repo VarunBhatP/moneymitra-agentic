@@ -1,21 +1,32 @@
+/* Define font stacks as CSS variables for easy updates */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Reset and global styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  box-sizing: border-box;
 }
 
+/* Apply monospace font to code elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
+  font-size: 1em; /* Optional: set a consistent font size */
 }
 
+/* Ensure all elements use border-box sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Full height for html, body, and root container */
 html, body, #root {
   height: 100%;
 }

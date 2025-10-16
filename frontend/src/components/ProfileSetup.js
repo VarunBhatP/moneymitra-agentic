@@ -31,7 +31,7 @@ const ProfileSetup = ({ userProfile, setUserProfile, onStart }) => {
     <div className="profile-setup">
       <div className="profile-setup-container">
         <div className="profile-header">
-          <h2>Welcome to MoneyMitra! 👋</h2>
+          <h2>Welcome to MoneyMitra! </h2>
           <p>Let's personalize your financial coaching experience</p>
         </div>
 
@@ -100,7 +100,7 @@ const ProfileSetup = ({ userProfile, setUserProfile, onStart }) => {
           </div>
 
           <button type="submit" className="start-button">
-            Start Financial Coaching 🚀
+            Start Financial Coaching 
           </button>
         </form>
 
