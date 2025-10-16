@@ -75,7 +75,7 @@ const ChatInterface = ({ userProfile }) => {
     <div className="chat-container">
       <div className="profile-bar">
         <div className="profile-info">
-          <MessageCircle size={20} />
+          <MessageCircle size={22} />
           <span>Chatting as: {userProfile.occupation} (₹{userProfile.income}/month)</span>
         </div>
         <div className="status-indicator">
