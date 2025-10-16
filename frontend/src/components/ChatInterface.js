@@ -97,7 +97,7 @@ const ChatInterface = ({ userProfile }) => {
                 </span>
                 {message.responseTime && (
                   <span className="response-time">
-                    <Zap size={12} />
+                    <Zap size={13} />
                     {message.responseTime}ms
                   </span>
                 )}
