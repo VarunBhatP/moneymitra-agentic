@@ -134,7 +134,6 @@ models/
 data/
 datasets/
 *.csv
-*.json
 *.parquet
 test_data/
 training_data/
