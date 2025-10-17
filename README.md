@@ -135,10 +135,11 @@ RESPONSE DELIVERY
 - **Prateek Bhat** - UI/UX Designer
 
 ## 📞 Contact
-- **Demo:** [Live Demo Link]
-- **Pitch Deck:** [Presentation Link]
-- **Video:** [Demo Video Link]
+- **Demo:** https://moneymitra-0dl8.onrender.com
+- **Pitch Deck:** https://docs.google.com/presentation/d/170EYWjj2qsq3-twSo4oc9ZQbW9s7hs1M/edit?usp=sharing&ouid=118003268077972577894&rtpof=true&sd=true
+- **Video:** https://youtu.be/4vlzOyR1RjA
 
 ---
 *Making financial coaching accessible to those who need it most. 🇮🇳*
+
 
