@@ -44,39 +44,7 @@ MoneyMitra is an **agentic AI system** that provides personalized financial coac
 
 ## 📊 System Architecture
 
-┌───────────────────────────────────────────────────────────────┐
-│                  MONEYMITRA AGENTIC AI SYSTEM                 │
-├───────────────────────────────────────────────────────────────┤
-│                                                               │
-│   ┌──────────────┐     ┌──────────────┐     ┌──────────────┐  │
-│   │  FRONTEND    │◄──► │   BACKEND    │◄──► │   AI ENGINE  │  │
-│   │   (React)    │     │  (Django)    │     │  (Cerebras)  │  │
-│   ├──────────────┤     ├──────────────┤     ├──────────────┤  │
-│   │ - Profile UI │     │ - REST APIs  │     │ - 3 AI Agents│  │
-│   │ - Chat UI    │     │ - Error Mgmt │     │ - Llama3.1-8B│  │
-│   │ - Real-time  │     │ - Production │     │ - <200ms Rsp │  │
-│   │ - Responsive │     │ - Context Mgt│     │ - OpenAI API │  │
-│   └──────────────┘     └──────────────┘     └──────────────┘  │
-│                                                               │
-├───────────────────────────────────────────────────────────────┤
-│                        LOGICAL COMPONENTS                     │
-│                                                               │
-│   ┌──────────────┐     ┌──────────────┐     ┌──────────────┐  │
-│   │USER INTERFACE│     │   API LAYER  │     │   AI AGENTS  │  │
-│   ├──────────────┤     ├──────────────┤     ├──────────────┤  │
-│   │ - Chat Msgs  │     │ /api/health/ │     │ quick_chat() │  │
-│   │ - Profiles   │     │ /api/advice/ │     │ advice_agent │  │
-│   │ - Analytics  │     │ /api/analyze/│     │ spend_agent  │  │
-│   │ - Errors     │     │ /api/chat/   │     │ context_build│  │
-│   └──────────────┘     └──────────────┘     └──────────────┘  │
-│                                                               │
-├───────────────────────────────────────────────────────────────┤
-│                           DATA FLOW                           │
-│                                                               │
-│ User Input → Profile Context → AI Agent → Cerebras API → Smart│
-│ Response → React UI → Django Logic → LLM Processing → JSON Out│
-└───────────────────────────────────────────────────────────────┘
-
+<img src="system_architect.png">
 
 
 ## **🔄 Request Flow**
@@ -108,29 +76,7 @@ RESPONSE DELIVERY
 
 ## **🧠 AI Agent Architecture**
 
-┌──────────────────────────────────────────────┐
-│             SIMPLE FINANCIAL AGENT           │
-├──────────────────────────────────────────────┤
-│                                              │
-│   ┌──────────────┐        ┌──────────────┐   │
-│   │  QUICK CHAT  │        │  FULL ADVICE │   │
-│   ├──────────────┤        ├──────────────┤   │
-│   │ - Real-time  │        │ - Deep       │   │
-│   │ - Contextual │        │   Analysis   │   │
-│   │ - <200ms Rsp │        │ - Planning   │   │
-│   └──────────────┘        └──────────────┘   │
-│             │                    │           │
-│             └──────────┬─────────┘           │
-│                        │                     │
-│        ┌────────────────────────────────┐    │
-│        │        SPENDING ANALYZER       │    │
-│        ├────────────────────────────────┤    │
-│        │ - Transaction Processing       │    │
-│        │ - Pattern Recognition          |    │
-│        │ - Actionable Insights          │    │
-│        └────────────────────────────────┘    │
-│                                              │
-└──────────────────────────────────────────────┘
+<img src="agent_architecture.png">
 
 
 ## 🚀 Quick Start
