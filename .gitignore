@@ -170,7 +170,7 @@ coverage.xml
 # ========================
 
 # Docker
-.dockerignore
+__pycache__/
 Dockerfile.prod
 docker-compose.override.yml
 

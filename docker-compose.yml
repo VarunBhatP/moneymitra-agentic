@@ -1,12 +1,21 @@
+version: '3.8'
+
 services:
   backend:
     build:
-      context: ./backend
+      context: ./backend/django_services
+    container_name: moneymitra-backend
     ports:
       - "8000:8000"
+    env_file:
+      - ./backend/django_services/.env
+    
 
   frontend:
     build:
       context: ./frontend
+    container_name: moneymitra-frontend
     ports:
       - "3000:80"
+    depends_on:
+      - backend
